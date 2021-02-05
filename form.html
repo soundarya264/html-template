@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/">
+        <div>
+            <label for="username">username</label>
+            <input type="text" name="user" id="username" required placeholder="username required" pattern="^[a-zA-Z0-9]+([._]?[a-zA-Z0-9]+)*$"> 
+        </div>
+        <br />
+        <div>
+            <label for="password">password</label>
+            <input type="password" name="pass" id="password" minlength="6">      
+        </div> 
+        <br />
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="emailid required">
+        </div>
+        <br />
+        <div>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        </div>
+        <br />
+        <div>
+            <input type="radio" id="gender" name="gen"/>
+            <label for="gender">Female</label>
+
+            <input type="radio" id="gender" name="gen"/>
+            <label for="gender">Male</label>
+        </div>
+        <br />
+
+        <div>
+            <input type="radio" id="gender" name="abc"/>
+            <label for="gender">abc</label>
+
+            <input type="radio" id="gender" name="def"/>
+            <label for="gender">def</label>
+        </div>
+        <br />
+        <div>
+            <input type="checkbox" id="sub1" name="subject">
+            <label for="sub1">HTML</label>
+            <br />
+
+            <input type="checkbox" id="sub2" name="subject">
+            <label for="sub2">JAVA</label>
+            <br />
+
+            <input type="checkbox" id="sub3" name="subject">
+            <label for="sub3">JS</label>
+            <br />
+
+            <input type="checkbox" id="sub4" name="subject">
+            <label for="sub4">DBMS</label>
+            <br />
+
+            <input type="checkbox" id="sub5" name="subject">
+            <label for="sub5">SQL</label>
+            <br />
+        </div>
+
+        <div>
+            <select multiple name="subjects" id="sub">
+                <option value="javascript">javascript</option>
+                <option selected value="reactjs">reactjs</option>
+                <option value="nodejs">nodejs</option>
+                <option value="html">html</option>
+                <option value="sql">sql</option>
+              </select>
+        </div>
+        <div>
+            <label for="favcolor">Select your favorite color:</label>
+             <input type="color" id="favcolor" name="favcolor">
+        </div>
+        <br />
+        <div>
+            <label for="birthday">Birthday:</label>
+             <input type="date" id="birthday" name="birthday"> 
+        </div>
+        <button>SUBMIT</button>         
+    </form>
+</body>
+</html>
